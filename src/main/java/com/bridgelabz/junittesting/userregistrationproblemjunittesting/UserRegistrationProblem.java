@@ -83,8 +83,10 @@ public class UserRegistrationProblem {
             // Regex to check valid password.
 //        	^ represents starting character of the string.
 //        	.{8, 20} represents at least 8 characters and at most 20 characters.
+//        	(?=.*[A-Z]) represents an upper case alphabet that must occur at least once.
 //        	$ represents the end of the string.
-            String regex = "^(?=\\S+$).{8,20}$";
+            String regex = "^(?=\\S+$).{8,20}$"
+            		+"(?=.*[A-Z])";
             // Compile the ReGex
             Pattern p = Pattern.compile(regex);
             // If the password is empty
