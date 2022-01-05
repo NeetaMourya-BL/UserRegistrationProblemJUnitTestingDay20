@@ -50,7 +50,7 @@ public class UserRegistrationProblem {
         public static boolean isValidUserEmail(String email)
         {
             // Regex to check valid useremail.
-            String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
+            String regex = "^[a-z.+_-]+[.a-z0-9]*+@[a-z0-9]+[.a-z]+[.a-z0-9]*$";
       
             // Compile the ReGex
             Pattern p = Pattern.compile(regex);
