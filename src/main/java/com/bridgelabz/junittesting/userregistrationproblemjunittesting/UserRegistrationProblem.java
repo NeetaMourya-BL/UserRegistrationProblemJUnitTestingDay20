@@ -149,7 +149,8 @@ public class UserRegistrationProblem {
         emails.add("abc@gmail.com.1a");  
         emails.add("abc@gmail.com.aa.au");  
         //Regular Expression   
-        String regex = "^(.+)@(.+)$";  
+      //  String regex = "^(.+)@(.+)$";  
+        String regex ="^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+(?:\\\\.[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\\\.[a-zA-Z0-9-]+)*$";
         //Compile regular expression to get the pattern  
         Pattern pattern = Pattern.compile(regex);  
         //Iterate emails array list  
